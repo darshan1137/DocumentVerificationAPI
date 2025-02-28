@@ -5,3 +5,11 @@ class SSCMarksheetSerializer(serializers.Serializer):
     roll_no = serializers.CharField(required=True)
     result = serializers.CharField(required=True)
     document_file = serializers.FileField(required=True)
+
+class CETMarksheetSerializer(serializers.Serializer):
+    name = serializers.CharField(required=True)
+    roll_no = serializers.CharField(required=True)
+    application_no = serializers.CharField(required=True)
+    category = serializers.CharField(required=True)
+    mothers_name = serializers.CharField(required=True)
+    document_file = serializers.FileField(required=True)
